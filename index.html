@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="KHH">
+    <meta name="author" content="kioskhomehub">
+    <title>Kiosk Home Hub – IN APP - SHOW Controllers</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="w-1000">
+            <div class="row justify-content-center">
+                <div class="col-sm-16 col-lg-10">
+                    <div class="card shadow zindex-100 mb-0">
+                        <div class="card-body px-md-5 py-5">
+                            <div class="mb-5">
+                                <h6 class="h3">Kiosk Settings - Define and Show Controllers</h6>
+                                <p class="text-muted mb-0">Customize the settings for your desired experience.</p>
+                            </div>
+                            <span class="clearfix"></span>
+                            <div id="form_container">
+                                <form id="defineControllers">
+                                    <div class="form-group">
+                                        <label for="control_form_define_input">Please pass JSON to define controller</label>
+                                        <textarea class="form-control" id="control_form_define_input" rows="3"></textarea>
+                                      </div>
+                                    <button id="control_form_define" class="btn btn-primary" type="submit">Define</button>
+                                </form>
+
+                                <form id="showControllers">
+                                    <div class="form-group">
+                                        <label for="control_form_show_input">Please pass JSON to show controller</label>
+                                        <textarea class="form-control" id="control_form_show_input" rows="3"></textarea>
+                                      </div>
+                                    <button id="control_form_show" class="btn btn-primary" type="submit">Show</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card-footer px-md-5"><small>Looking for something else?</small>
+                            <a href="#" class="small font-weight-bold">Navigate Somewhere else</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="log"></div>
+    <!-- Scripts-->
+    <script src="js/main.js">
+        (function(){
+            //Trigger something here
+            define_controls();
+        })();
+    </script>
+</body>
+
+</html>

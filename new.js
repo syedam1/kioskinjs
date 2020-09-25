@@ -1,3 +1,4 @@
+/*Kioskhomehub*/
 const klogin = () => {
     location.href = "https://www.kioskhomehub.com/login";
     setTimeout(() => {
@@ -11,6 +12,18 @@ const klogin = () => {
 };
 klogin();
 
-
+//Logout
 document.getElementById('logout-form').submit();
+
+
+/* www.dropmark.com*/
+location.href = "https://app.dropmark.com/login";
+
+
+document.getElementById('f_email').value='tech@am1.org';
+document.getElementById('f_password').value='kioskhomehub';
+document.getElementsByClassName("js-submit-button").submit.click();
+
+
+
 
